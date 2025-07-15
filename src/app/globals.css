@@ -1,0 +1,479 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://use.typekit.net/ooq3gab.css");
+
+@font-face {
+  font-family: "TT Firs Neue Bold Outline Trial";
+  src: local("TT Firs Neue Bold Outline Trial"),
+       local("TT-Firs-Neue-Bold-Outline-Trial"),
+       url("/fonts/TT Firs Neue Bold Outline Trial.otf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Black";
+  src: local("TT Firs Neue Trial Black"),
+       local("TT-Firs Neue-Trial-Black"),
+       url("/fonts/TT Firs Neue Trial Black.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Light Italic";
+  src: local("TT Firs Neue Trial Light Italic"),
+       local("TT-Firs-Neue-Trial-Light-Italic"),
+       url("/fonts/TT Firs Neue Trial Light Italic.ttf");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #000; /* siyah, koyu gri, degrade… */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden !important;
+  height: 3600px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-section nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.banner-section nav i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.notify-btn a {
+  color: #262629;
+  background-color: #fff;
+  padding: 6px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 14px;
+  font-family: "TT Firs Neue Trial Black";
+}
+
+.wrapper-svg {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-section svg#svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+
+
+.container .text {
+  text-decoration: none;
+  font-family: "TT Firs Neue Trial Black";
+  font-size: 9rem;
+  padding-bottom: 0;
+  padding-top: 1rem;
+  font-weight: 900;
+  line-height: 85%;
+  color: black;
+  text-indent: 1rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #b3b1b1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.container .text-color {
+  color: #ff3355;
+  background-color: #ff7733;
+  background-image: linear-gradient(
+    30deg,
+    #ff3355 40%,
+    #fd4391 80%,
+    #ff7733 100%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
+}
+
+.container .text::after {
+  content: "";
+  display: block;
+  background: #494747;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.text::selection {
+  background-color: #e62e4d4f;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.banner-section .container span {
+  color: #fff;
+  margin-right: 3rem;
+  font-family: "grafolita-script", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.profile-section::after {
+  content: "";
+  display: block;
+  background: #494747;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.profile-circle img {
+  transition: all 0.2s ease-out;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px black;
+  z-index: 1;
+  position: relative;
+}
+
+.profile-circle img:hover {
+  position: relative;
+  z-index: 100;
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+  background: #00e599;
+  cursor: pointer;
+}
+
+.profile-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.profile-circle {
+  display: block;
+  position: relative;
+  margin: 0 -1.5rem 0 0;
+  border-radius: 50%;
+  padding: 0;
+  width: fit-content;
+  transition: all 0.2s ease-out;
+}
+
+.profile-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.profile-section .profile-text span {
+  color: #ece9e4;
+  font-weight: 800;
+}
+
+.profile-section .profile-text i {
+  color: yellow;
+  margin-left: 0.3rem;
+  font-size: 14px;
+}
+
+.profile-section .profile-text h6 {
+  color: #999494;
+}
+
+.profile-rating {
+  display: flex;
+  align-items: baseline;
+}
+
+.interface-section p {
+  color: #ece9e4;
+  font-weight: 700;
+  font-size: 30px;
+  width: 70%;
+}
+
+.interface-section ul li {
+  list-style: none;
+}
+
+.interface-section ul li {
+  color: #999494;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.interface-section ul li i {
+  color: #ff3355;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.interface-section ul li:hover i {
+  transform: scale(1.2);
+}
+
+.interface-section ul li:hover {
+  color: #ece9e4;
+}
+
+.number-rate-section .number-item {
+  font-size: 120px;
+  display: inline;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #595959;
+  font-weight: 900;
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.number-rate-section .number-plus {
+  color: #ff3355 !important;
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+  -webkit-text-stroke-width: 0;
+}
+
+.number-rate-section .number-text {
+  color: #ff3355 !important;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  -webkit-text-stroke-width: 0;
+}
+
+.number-rate-section .number-item:hover {
+  color: #ece9e4;
+  -webkit-text-stroke-color: #ece9e4;
+}
+
+.border-main {
+  width: 250px;
+  height: 1px;
+  transform: rotate(90deg);
+  background-color: #fff;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.review-section p.review-text {
+  font-size: 50px;
+  color: #747474;
+  font-weight: 400;
+  font-family: "TT Firs Neue Trial Light Italic";
+  padding: 20px;
+}
+
+.review-section span {
+  background-color: #00e599;
+  color: #262629;
+  font-weight: 600;
+}
+
+.review-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-section p.review-person {
+  font-size: 20px;
+  color: #747474;
+  font-weight: 400;
+  font-family: "TT Firs Neue Trial Light Italic";
+  padding: 20px;
+}
+
+.animation-section h2 {
+  color: #ece9e4;
+  background-color: #ff7733;
+  background-image: linear-gradient(30deg, #ece9e4, white);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 6.5rem;
+  padding: 4rem 0 2rem;
+  line-height: 75%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.animation-section {
+  position: relative;
+}
+
+.animation-section iframe:nth-child(1) {
+  position: absolute;
+  bottom: -14px;
+  left: 40%;
+}
+
+.animation-section iframe:nth-child(2) {
+  position: absolute;
+  left: 44%;
+  bottom: -80px;
+}
+
+.contact-section {
+  background-image: url("/mocukp.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 50px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section a {
+  color: #d70984;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* RESPONSIVE-SECTION-START */
+
+@media only screen and (max-width: 900px) {
+  * {
+    overflow-x: hidden;
+  }
+  body {
+    background-color: #000;
+    overflow-x: hidden !important;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .banner-section {
+    height: auto;
+  }
+
+  .banner-section .container .text {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  .wrapper-svg {
+    height: auto;
+  }
+
+  .profile-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-box {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1rem;
+  }
+
+  .interface-section p {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .number-rate-section .number-item {
+    font-size: 60px;
+  }
+
+  .review-section p.review-text {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .contact-section {
+    margin: 0;
+    height: auto;
+    padding: 0;
+  }
+  .animation-section h2 {
+    font-size: 30px;
+    line-height: normal;
+    padding: 0;
+  }
+  .animation-section iframe {
+    display: none;
+  }
+  .contact-section a {
+    font-size: 12px;
+  }
+  .contact-section h4 {
+    font-size: 16px;
+  }
+}
+
+/* RESPONSIVE-SECTION-FINISH */
+
+#container3D {
+  position: fixed;
+  inset: 0;
+  z-index: 99999999;
+}
