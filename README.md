@@ -37,9 +37,6 @@ This project is an interactive 3D astronaut scene built with **React Three Fiber
 # Clone the repo
 git clone https://github.com/YildizDikme/threejs-astronaut.git
 
-# Navigate into the project folder
-cd threejs-astronaut
-
 # Install dependencies
 npm install
 
